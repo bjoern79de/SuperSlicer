@@ -1096,6 +1096,7 @@ public:
     ConfigOptionFloats              filament_max_speed;
     ConfigOptionFloats              filament_spool_weight;
     ConfigOptionFloats              filament_max_volumetric_speed;
+    ConfigOptionFloats              filement_first_layer_speed;
     ConfigOptionFloats              filament_max_wipe_tower_speed;
     ConfigOptionStrings             filament_type;
     ConfigOptionFloats              filament_loading_speed;
@@ -1215,6 +1216,7 @@ protected:
         OPT_PTR(filament_max_speed);
         OPT_PTR(filament_spool_weight);
         OPT_PTR(filament_max_volumetric_speed);
+        OPT_PTR(filement_first_layer_speed);
         OPT_PTR(filament_max_wipe_tower_speed);
         OPT_PTR(filament_loading_speed);
 		OPT_PTR(filament_use_skinnydip);  //skinnydip start

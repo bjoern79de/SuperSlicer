@@ -1376,6 +1376,16 @@ void PrintConfigDef::init_fff_params()
     def->is_vector_extruder = true;
     def->set_default_value(new ConfigOptionFloats{ 0. });
 
+    def = this->add("filement_first_layer_speed", coFloats);
+    def->label = L("Max first layer speed");
+    def->category = OptionCategory::filament;
+    def->tooltip = L("Maximum first layer speed allowed for this filament. Limits the maximum volumetric");
+    def->sidetext = L("mm/s");
+    def->min = 0;
+    def->mode = comAdvanced;
+    def->is_vector_extruder = true;
+    def->set_default_value(new ConfigOptionFloats{ 0. });
+
     def = this->add("filament_max_wipe_tower_speed", coFloats);
     def->label = L("Max speed on the wipe tower");
     def->tooltip = L("This setting is used to set the maximum speed when extruding inside the wipe tower (use M220)."

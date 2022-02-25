@@ -25,6 +25,7 @@ group:Filament properties
 group:Print speed override
 	setting:filament_max_speed
 	setting:filament_max_volumetric_speed
+	setting:filement_first_layer_speed
 	volumetric_speed_description
 
 page:Cooling:time
